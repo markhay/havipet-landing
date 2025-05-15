@@ -62,34 +62,10 @@
       margin-bottom: 2rem;
     }
 
-    .email-form {
+    .beehiiv-embed {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-
-    .email-form input[type="email"] {
-      padding: 0.75rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      width: 250px;
-      max-width: 100%;
-    }
-
-    .email-form button {
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      background-color: #f28c5b;
-      border: none;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    .email-form button:hover {
-      background-color: #e67843;
+      margin-top: 1rem;
     }
 
     footer {
@@ -109,10 +85,17 @@
       <p class="subtitle">Co-created by world-renowned animal behavior professionals including a veterinary behaviorist and dog trainer.</p>
       <p class="description">Powered by Human Intelligence + A.I. Built for Pet Parents.</p>
       <p class="tagline">Gentle, science-backed support for your pet’s body language, behavior and training — no judgment, no force, just understanding.</p>
-      <form class="email-form">
-        <input type="email" placeholder="Enter your email" required>
-        <button type="submit">Notify Me</button>
-      </form>
+      
+      <div class="beehiiv-embed">
+        <iframe 
+          src="https://embeds.beehiiv.com/5714b292-0a8a-46c8-9578-6ae5d531e4ae?slim=true" 
+          data-test-id="beehiiv-embed" 
+          height="52" 
+          frameborder="0" 
+          scrolling="no" 
+          style="margin: 0 auto; max-width: 600px; width: 100%; border-radius: 0px !important; background-color: transparent;">
+        </iframe>
+      </div>
     </div>
   </section>
 
