@@ -13,19 +13,17 @@
       line-height: 1.6;
     }
 
-   .hero {
-  position: relative;
-  width: 100%;
-  background: url('havipet-hero-image.png') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding-top: 5vh;
-  padding-bottom: 10vh;
-  flex-direction: column;
-}
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('hero-image.png') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
 
     .overlay {
       position: absolute;
@@ -64,10 +62,34 @@
       margin-bottom: 2rem;
     }
 
-    .beehiiv-embed {
+    .email-form {
       display: flex;
       justify-content: center;
-      margin-top: 1rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .email-form input[type="email"] {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      width: 250px;
+      max-width: 100%;
+    }
+
+    .email-form button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background-color: #f28c5b;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .email-form button:hover {
+      background-color: #e67843;
     }
 
     footer {
@@ -87,18 +109,10 @@
       <p class="subtitle">Co-created by world-renowned animal behavior professionals including a veterinary behaviorist and dog trainer.</p>
       <p class="description">Powered by Human Intelligence + A.I. Built for Pet Parents.</p>
       <p class="tagline">Gentle, science-backed support for your pet’s body language, behavior and training — no judgment, no force, just understanding.</p>
-      
-     <!-- Beehiiv Waitlist Embed -->
-<div class="beehiiv-embed" style="margin-top: 2rem;">
-  <iframe 
-    src="https://embeds.beehiiv.com/5714b292-0a8a-46c8-9578-6ae5d531e4ae?slim=true" 
-    data-test-id="beehiiv-embed" 
-    height="120" 
-    frameborder="0" 
-    scrolling="no" 
-    style="margin: 0 auto; width: 100%; max-width: 600px; display: block; background-color: transparent;">
-  </iframe>
-</div>
+      <form class="email-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Notify Me</button>
+      </form>
     </div>
   </section>
 
